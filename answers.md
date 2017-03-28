@@ -1,20 +1,21 @@
 ## Example:
-1.
- - `SQL:`
-    SELECT count(\*) from items
 
- - `ANSWER:`
-   100
+1.
+ - SQL:
+    SELECT max(column) FROM table
+
+ - ANSWER:
+   42
 
 ---
 
 1.
- - `SQL:`
+ - SQL:
 
- - `ANSWER:`
+ - ANSWER:
 
 
 2.
- - `SQL:`
+ - SQL:
 
- - `ANSWER:`
+ - ANSWER:
