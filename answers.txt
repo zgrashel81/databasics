@@ -11,11 +11,63 @@
 
 1.
  - SQL:
+    select count(*) from users
 
  - ANSWER:
-
+    50
 
 2.
  - SQL:
+    select * from items order by price desc limit 5
 
  - ANSWER:
+    Small Cotton Gloves, Small Wooden Computer, Awesome Granite Pants, Sleek Wooden Hat, Ergonomic Steel Car.
+
+3.
+  SQL:
+  select title, category, price from items where category like 'books' order by price limit 1
+
+  ANSWER:
+  Ergonomic Granite Chair
+
+4.
+    SQL:
+    select users.first_name, users.last_name, addresses.street from addresses, users where users where users.id = addresses.users_id and street = '6439 Zetta Hills' and city = 'Willmouth' and state = 'WY'
+
+    ANSWER:
+    Corrine Little
+
+5.
+    SQL:
+    select * from users where first_name = 'Virginie';
+    UPDATE addresses SET city = 'New York', state = 'NY', zip
+.........................  = '10108'
+
+    ANSWER:39 |        37 | 7503 Cale Grove         | New York | NY      | 10108
+
+6.
+    SQL:
+    SELECT sum(price) from items where category = 'Tools'
+
+    ANSWERS:
+    7383
+
+7.
+    SQL:
+    SELECT sum(quantity) from orders
+
+    ANSWER:
+    2125
+
+8.
+    SQL:
+     select sum (orders.quantity * items.price) from orders, items where orders.item_id = items.id and items.ca
+......................... tegory = 'Books'
+
+    ANSWER:
+    420566
+
+9.
+    SQL:
+    INSERT INTO users values (51,'Zachary', 'Grashel', 'zgrashel@yahoo.com')
+    
